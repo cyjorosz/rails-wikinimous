@@ -1,0 +1,10 @@
+<h1>Wikinimous</h1>
+
+<h3 style="text-align: right"><%= link_to "New Article" , articles_new_path %></h3>
+
+<br>
+<% @articles.each do |article|%>
+
+  <h2 style="text-align: center"> <%= article.title %></h2>
+  <p style="text-align: center"> <%= article.content %> </p>
+<% end %>
